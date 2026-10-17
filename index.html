@@ -8,6 +8,129 @@
   <meta name="description" content="Guidely helps students explore careers, discover learning paths, and prepare for their future with guidance.">
   <title>Guidely — Guidance That Moves You Forward</title>
 
+/* Guidely Mentor Registration */
+.mentor-register {
+  padding: 65px 0;
+  background: #f0f3ff;
+}
+
+.mentor-form-wrap {
+  max-width: 760px;
+  margin: auto;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2e7f5;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(35, 60, 130, .08);
+}
+
+.mentor-form-wrap h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  letter-spacing: -1px;
+  margin: 14px 0 8px;
+}
+
+.mentor-form-intro {
+  color: #66718a;
+  margin-bottom: 22px;
+}
+
+.demo-alert {
+  padding: 14px 16px;
+  margin-bottom: 25px;
+  border: 1px solid #f2d28a;
+  border-radius: 12px;
+  background: #fff8e6;
+  color: #76520b;
+  font-size: 13px;
+}
+
+.mentor-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.mentor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mentor-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.mentor-field label {
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.mentor-field input,
+.mentor-field select,
+.mentor-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce2ef;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  color: #15213b;
+  background: #fff;
+}
+
+.mentor-field input:focus,
+.mentor-field select:focus,
+.mentor-field textarea:focus {
+  outline: 2px solid #3458e8;
+  outline-offset: 1px;
+}
+
+.mentor-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.mentor-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #536078;
+}
+
+.mentor-consent input {
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.mentor-submit {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.mentor-status {
+  grid-column: 1 / -1;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+.mentor-status.visible {
+  display: block;
+  background: #edf1ff;
+  color: #203fc0;
+}
+
+@media (max-width: 600px) {
+  .mentor-form-wrap { padding: 22px 17px; }
+  .mentor-form { grid-template-columns: 1fr; }
+  .mentor-field.full-width,
+  .mentor-submit,
+  .mentor-status { grid-column: 1; }
+}
+
   <style>
     :root {
       --blue: #3458e8;
