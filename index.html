@@ -8,129 +8,6 @@
   <meta name="description" content="Guidely helps students explore careers, discover learning paths, and prepare for their future with guidance.">
   <title>Guidely — Guidance That Moves You Forward</title>
 
-/* Guidely Mentor Registration */
-.mentor-register {
-  padding: 65px 0;
-  background: #f0f3ff;
-}
-
-.mentor-form-wrap {
-  max-width: 760px;
-  margin: auto;
-  padding: 32px;
-  background: #fff;
-  border: 1px solid #e2e7f5;
-  border-radius: 24px;
-  box-shadow: 0 15px 45px rgba(35, 60, 130, .08);
-}
-
-.mentor-form-wrap h2 {
-  font-size: clamp(28px, 4vw, 38px);
-  letter-spacing: -1px;
-  margin: 14px 0 8px;
-}
-
-.mentor-form-intro {
-  color: #66718a;
-  margin-bottom: 22px;
-}
-
-.demo-alert {
-  padding: 14px 16px;
-  margin-bottom: 25px;
-  border: 1px solid #f2d28a;
-  border-radius: 12px;
-  background: #fff8e6;
-  color: #76520b;
-  font-size: 13px;
-}
-
-.mentor-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.mentor-field {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.mentor-field.full-width {
-  grid-column: 1 / -1;
-}
-
-.mentor-field label {
-  font-size: 13px;
-  font-weight: 750;
-}
-
-.mentor-field input,
-.mentor-field select,
-.mentor-field textarea {
-  width: 100%;
-  padding: 13px 14px;
-  border: 1px solid #dce2ef;
-  border-radius: 10px;
-  font: inherit;
-  font-size: 14px;
-  color: #15213b;
-  background: #fff;
-}
-
-.mentor-field input:focus,
-.mentor-field select:focus,
-.mentor-field textarea:focus {
-  outline: 2px solid #3458e8;
-  outline-offset: 1px;
-}
-
-.mentor-field textarea {
-  min-height: 110px;
-  resize: vertical;
-}
-
-.mentor-consent {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 13px;
-  color: #536078;
-}
-
-.mentor-consent input {
-  margin-top: 5px;
-  flex-shrink: 0;
-}
-
-.mentor-submit {
-  width: 100%;
-  grid-column: 1 / -1;
-}
-
-.mentor-status {
-  grid-column: 1 / -1;
-  padding: 13px;
-  border-radius: 10px;
-  font-size: 14px;
-  display: none;
-}
-
-.mentor-status.visible {
-  display: block;
-  background: #edf1ff;
-  color: #203fc0;
-}
-
-@media (max-width: 600px) {
-  .mentor-form-wrap { padding: 22px 17px; }
-  .mentor-form { grid-template-columns: 1fr; }
-  .mentor-field.full-width,
-  .mentor-submit,
-  .mentor-status { grid-column: 1; }
-}
-
   <style>
     :root {
       --blue: #3458e8;
@@ -492,7 +369,130 @@
       .hero-copy { font-size: 15px; }
       .footer-inner { align-items: flex-start; flex-direction: column; }
     }
-  </style>
+ 
+/* Guidely Mentor Registration */
+.mentor-register {
+  padding: 65px 0;
+  background: #f0f3ff;
+}
+
+.mentor-form-wrap {
+  max-width: 760px;
+  margin: auto;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2e7f5;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(35, 60, 130, .08);
+}
+
+.mentor-form-wrap h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  letter-spacing: -1px;
+  margin: 14px 0 8px;
+}
+
+.mentor-form-intro {
+  color: #66718a;
+  margin-bottom: 22px;
+}
+
+.demo-alert {
+  padding: 14px 16px;
+  margin-bottom: 25px;
+  border: 1px solid #f2d28a;
+  border-radius: 12px;
+  background: #fff8e6;
+  color: #76520b;
+  font-size: 13px;
+}
+
+.mentor-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.mentor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mentor-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.mentor-field label {
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.mentor-field input,
+.mentor-field select,
+.mentor-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce2ef;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  color: #15213b;
+  background: #fff;
+}
+
+.mentor-field input:focus,
+.mentor-field select:focus,
+.mentor-field textarea:focus {
+  outline: 2px solid #3458e8;
+  outline-offset: 1px;
+}
+
+.mentor-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.mentor-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #536078;
+}
+
+.mentor-consent input {
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.mentor-submit {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.mentor-status {
+  grid-column: 1 / -1;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+.mentor-status.visible {
+  display: block;
+  background: #edf1ff;
+  color: #203fc0;
+}
+
+@media (max-width: 600px) {
+  .mentor-form-wrap { padding: 22px 17px; }
+  .mentor-form { grid-template-columns: 1fr; }
+  .mentor-field.full-width,
+  .mentor-submit,
+  .mentor-status { grid-column: 1; }
+}
+ </style>
 </head>
 
 <body>
@@ -513,8 +513,110 @@
       <a class="btn nav-cta" href="#explore">Explore your future ↗</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"
         aria-expanded="false">☰</button>
+      <a href="#mentor-register">Become a mentor</a>
     </nav>
   </header>
+
+<section class="mentor-register" id="mentor-register">
+  <div class="container">
+    <div class="mentor-form-wrap">
+      <span class="eyebrow">Join the Guidely community</span>
+      <h2>Become a mentor.</h2>
+      <p class="mentor-form-intro">
+        Share your learning journey and help students explore their future.
+      </p>
+
+      <div class="demo-alert" role="note">
+        <strong>DEMO FORM — NOT LIVE</strong><br>
+        This form is a prototype only. Your information will not be
+        submitted or saved. Please do not enter real personal information
+        until the secure backend is connected.
+      </div>
+
+      <form class="mentor-form" id="mentorForm">
+        <div class="mentor-field">
+          <label for="mentorName">Full name *</label>
+          <input id="mentorName" name="name" type="text"
+            placeholder="Demo Mentor" required maxlength="80">
+        </div>
+
+        <div class="mentor-field">
+          <label for="mentorEmail">Email address *</label>
+          <input id="mentorEmail" name="email" type="email"
+            placeholder="mentor@example.com" required maxlength="120">
+        </div>
+
+        <div class="mentor-field">
+          <label for="mentorCollege">College / Institution *</label>
+          <input id="mentorCollege" name="college" type="text"
+            placeholder="Your institution" required maxlength="120">
+        </div>
+
+        <div class="mentor-field">
+          <label for="mentorYear">Current study level *</label>
+          <select id="mentorYear" name="studyLevel" required>
+            <option value="">Select your level</option>
+            <option>Undergraduate — 1st year</option>
+            <option>Undergraduate — 2nd year</option>
+            <option>Undergraduate — 3rd year</option>
+            <option>Undergraduate — 4th year or later</option>
+            <option>Postgraduate</option>
+            <option>Graduate / Working professional</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="mentor-field">
+          <label for="mentorField">Mentoring interest *</label>
+          <select id="mentorField" name="field" required>
+            <option value="">Choose a field</option>
+            <option>Engineering & Technology</option>
+            <option>Medicine & Healthcare</option>
+            <option>Science & Research</option>
+            <option>Business & Finance</option>
+            <option>Design & Creativity</option>
+            <option>College & Career Guidance</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="mentor-field">
+          <label for="mentorExperience">Relevant experience</label>
+          <select id="mentorExperience" name="experience">
+            <option value="">Select an option</option>
+            <option>Peer guidance</option>
+            <option>Academic mentoring</option>
+            <option>Career guidance</option>
+            <option>Volunteering</option>
+            <option>New to mentoring</option>
+          </select>
+        </div>
+
+        <div class="mentor-field full-width">
+          <label for="mentorReason">Why would you like to mentor? *</label>
+          <textarea id="mentorReason" name="reason"
+            placeholder="Tell us what you hope to share with students..."
+            required maxlength="700"></textarea>
+        </div>
+
+        <div class="mentor-field full-width">
+          <label class="mentor-consent">
+            <input type="checkbox" id="mentorConsent" required>
+            <span>I understand this is a demo form and my information
+              will not be submitted or saved. *</span>
+          </label>
+        </div>
+
+        <button class="btn mentor-submit" type="submit">
+          Preview application →
+        </button>
+
+        <div class="mentor-status" id="mentorStatus"
+          role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
 
   <main>
     <section class="hero" id="home">
@@ -754,7 +856,7 @@
     </div>
   </footer>
 
-  <script>
+ <script>
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
@@ -773,6 +875,28 @@
     });
 
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+ 
+const mentorForm = document.getElementById("mentorForm");
+const mentorStatus = document.getElementById("mentorStatus");
+
+mentorForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!mentorForm.checkValidity()) {
+    mentorForm.reportValidity();
+    return;
+  }
+
+  mentorStatus.textContent =
+    "Demo successful! No application was submitted or saved. " +
+    "A secure backend is needed before real registrations can begin.";
+
+  mentorStatus.classList.add("visible");
+  mentorStatus.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest"
+  });
+});
+ </script>
 </body>
 </html>
